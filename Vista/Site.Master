@@ -40,36 +40,46 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solicitudes
                             </a>
                             <div class="dropdown-menu border-0 shadow animate slideIn" aria-labelledby="navbarDropdown">
-                                
                                 <a class="dropdown-item" href="/">Todas</a>
                                 <a class="dropdown-item" href="/">Aprobadas</a>
                                 <a class="dropdown-item" href="/">Pendientes</a>
                                 <a class="dropdown-item" href="/">Rechazadas</a>
-                                
                             </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/">Remitos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="EmpresaListado.aspx?condicion=habilitadas">Clientes</a>
+                            <a class="nav-link" href="EmpresaListado.aspx?condicion=habilitadas&tipo=cliente">Clientes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">Transportistas</a>
+                            <a class="nav-link" href="EmpresaListado.aspx?condicion=habilitadas&tipo=transportista">Transportistas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/">CAI</a>
+                            <a class="nav-link" href="CAIListado.aspx">CAI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ArticuloListado.aspx?condicion=habilitados">Artículos</a>
                         </li>
                         
                     </ul>
                     <ul class="navbar-nav pb-3 pb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Datos Personales</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownUsuario" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usuario
+                            </a>
+                            <div class="dropdown-menu border-0 shadow animate slideIn" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="/">Datos Personales</a>
+                                <%
+                                    if (true)
+                                    {
+                                        %>
+                                        <a class="dropdown-item" href="UsuarioListado.aspx?condicion=habilitados">Listado</a>
+                                        <%
+                                    }
+                                    %>
+                                <a class="dropdown-item" href="Login.aspx">Log Out</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Login.aspx">Log Out</a>
-                        </li>
-                        
                     </ul>
                 </div>
             </div>
@@ -89,7 +99,7 @@
         </footer>
 
         <!-- Bootstrap core JavaScript -->
-        <script src="js/jquery.min.js"></script>
+        <%--<script src="js/jquery.min.js"></script>--%>
         <script src="js/bootstrap.bundle.min.js"></script>
     </form>
 </body>

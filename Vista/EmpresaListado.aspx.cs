@@ -11,14 +11,16 @@ namespace Vista
 {
     public partial class EmpresaListado : System.Web.UI.Page
     {
-        public List<EmpresaModelo> listaDeClientes { get; set; }
+        public List<EmpresaModelo> listaDeEmpresas { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             String condicion;
+            String tipo;
             DAOEmpresa dAOEmpresa = new DAOEmpresa();
-            if (Request.QueryString["condicion"] == null)
+            if (Request.QueryString["condicion"] == null || Request.QueryString["tipo"] == null)
             {
                 condicion = "habilitadas";
+                tipo = "cliente";
             }
             else
             {
@@ -37,8 +39,23 @@ namespace Vista
                         condicion = "habilitadas";
                     }
                 }
+                if (Request.QueryString["tipo"] == "cliente")
+                {
+                    tipo = "cliente";
+                }
+                else
+                {
+                    if (Request.QueryString["tipo"] == "transportista")
+                    {
+                        tipo = "transportista";
+                    }
+                    else
+                    {
+                        tipo = "todas";
+                    }
+                }
             }
-            listaDeClientes = dAOEmpresa.ListarEmpresas(condicion);
+            listaDeEmpresas = dAOEmpresa.ListarEmpresas(condicion, tipo);
         }
     }
 }

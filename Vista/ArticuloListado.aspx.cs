@@ -9,13 +9,13 @@ using Controlador;
 
 namespace Vista
 {
-    public partial class UsuarioListado : System.Web.UI.Page
+    public partial class ArticuloListado : System.Web.UI.Page
     {
-        public List<UsuarioModelo> listaDeUsuarios { get; set; }
+        public List<ArticuloModelo> listaDeArticulos { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             String condicion;
-            DAOUsuario dao = new DAOUsuario();
+            DAOArticulo dao = new DAOArticulo();
             if (Request.QueryString["condicion"] == null)
             {
                 condicion = "habilitados";
@@ -38,7 +38,7 @@ namespace Vista
                     }
                 }
             }
-            listaDeUsuarios = dao.ListarUsuarios(condicion);
+            listaDeArticulos = dao.ListarArticulo(condicion);
         }
     }
 }

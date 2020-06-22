@@ -11,7 +11,7 @@ namespace Vista
 {
 
 
-    public partial class UsuarioAlta
+    public partial class ArticuloAlta
     {
 
         /// <summary>
@@ -24,49 +24,22 @@ namespace Vista
         protected global::System.Web.UI.WebControls.Label confirmacionAlta;
 
         /// <summary>
-        /// tbUsuarioNombre control.
+        /// tbCodigo_articulo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbUsuarioNombre;
+        protected global::System.Web.UI.WebControls.TextBox tbCodigo_articulo;
 
         /// <summary>
-        /// tbUsuarioCode1 control.
+        /// tbDescripcion_articulo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbUsuarioCode1;
-
-        /// <summary>
-        /// tbEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbEmail;
-
-        /// <summary>
-        /// tbPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbPassword;
-
-        /// <summary>
-        /// selectTipoUsuario control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect selectTipoUsuario;
+        protected global::System.Web.UI.WebControls.TextBox tbDescripcion_articulo;
 
         /// <summary>
         /// btnAlta control.

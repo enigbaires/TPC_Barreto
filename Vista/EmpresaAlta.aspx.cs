@@ -22,7 +22,6 @@ namespace Vista
             if (IsValid)
             {
                 EmpresaModelo empresa = new EmpresaModelo();
-
                 empresa.razon_social = tbRazonSocial.Text;
                 empresa.cuit = tbCuit.Text;
                 empresa.numero_sap_empresa = Convert.ToInt32(tbNroSAP.Text);
@@ -31,11 +30,8 @@ namespace Vista
                 empresa.telefono = tbTelefono.Text;
                 empresa.email = tbEmail.Text;
                 empresa.tipo_empresa = Convert.ToInt32(selectTipoEmpresa.Value);
-                //empresa.tipo_empresa = Convert.ToInt32(tbTipoEmpresa.Text);
-
                 DAOEmpresa dao = new DAOEmpresa();
-
-                if (dao.agregarEmpresa(empresa))
+                if (dao.AgregarEmpresa(empresa))
                 {
                     tbRazonSocial.Text = "";
                     tbCuit.Text = "";
@@ -50,9 +46,8 @@ namespace Vista
                 else
                 {
                     confirmacionAlta.CssClass = "text-danger";
-                    confirmacionAlta.Text = "Empresa agregada correctamente";
+                    confirmacionAlta.Text = "Empresa NO SE PUDO agregar correctamente";
                 }
-
             }
         }
     }

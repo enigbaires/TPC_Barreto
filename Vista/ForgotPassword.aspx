@@ -21,12 +21,9 @@
 <body class="bg-gradient-primary">
     <form id="form1" runat="server">
         <div class="container">
-
             <!-- Outer Row -->
             <div class="row justify-content-center">
-
                 <div class="col-xl-10 col-lg-12 col-md-9">
-
                     <div class="card o-hidden border-0 shadow-lg my-5">
                         <div class="card-body p-0">
                             <!-- Nested Row within Card Body -->
@@ -44,11 +41,9 @@
                                             <div class="form-group">
                                                 <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Ingrese su dirección de Email...">
                                             </div>
-                                            <a href="Login.aspx" class="btn btn-primary btn-user btn-block">Reset Password
-                    </a>
+                                            <a href="Login.aspx" class="btn btn-primary btn-user btn-block">Reset Password</a>
                                         </form>
                                         <hr>
-                                        
                                         <div class="text-center">
                                             <a class="small" href="Login.aspx">Te acordaste? Login!</a>
                                         </div>
@@ -57,11 +52,8 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
 
         <!-- Bootstrap core JavaScript -->

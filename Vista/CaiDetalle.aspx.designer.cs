@@ -11,70 +11,61 @@ namespace Vista
 {
 
 
-    public partial class UsuarioAlta
+    public partial class CaiDetalle
     {
 
         /// <summary>
-        /// confirmacionAlta control.
+        /// confirmacionEstado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label confirmacionAlta;
+        protected global::System.Web.UI.WebControls.Label confirmacionEstado;
 
         /// <summary>
-        /// tbUsuarioNombre control.
+        /// tbNro_cai control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbUsuarioNombre;
+        protected global::System.Web.UI.WebControls.TextBox tbNro_cai;
 
         /// <summary>
-        /// tbUsuarioCode1 control.
+        /// tbPunto_venta control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbUsuarioCode1;
+        protected global::System.Web.UI.WebControls.TextBox tbPunto_venta;
 
         /// <summary>
-        /// tbEmail control.
+        /// tbFecha_inicio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbEmail;
+        protected global::System.Web.UI.WebControls.TextBox tbFecha_inicio;
 
         /// <summary>
-        /// tbPassword control.
+        /// tbFecha_fin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbPassword;
+        protected global::System.Web.UI.WebControls.TextBox tbFecha_fin;
 
         /// <summary>
-        /// selectTipoUsuario control.
+        /// btnModificacion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect selectTipoUsuario;
-
-        /// <summary>
-        /// btnAlta control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAlta;
+        protected global::System.Web.UI.WebControls.Button btnModificacion;
     }
 }

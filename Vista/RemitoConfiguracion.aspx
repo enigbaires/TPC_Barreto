@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="RemitoConfiguracion.aspx.cs" Inherits="Vista.RemitoConfiguracion" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    
     <link href="css/all.min.css" rel="stylesheet" type="text/css">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 </asp:Content>

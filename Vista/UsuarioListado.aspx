@@ -1,13 +1,59 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="UsuarioListado.aspx.cs" Inherits="Vista.UsuarioListado" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link href="css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="text-center">
-            <div class="error mx-auto" data-text="404">404</div>
-            <p class="lead text-gray-800 mb-5">Page Not Found</p>
-            <p class="text-gray-500 mb-0">It looks like you found a glitch in the matrix...</p>
-            <a href="Default.aspx">← Back to Dashboard</a>
-          </div>
+    <a href="UsuarioAlta.aspx" class="btn btn-primary btn-user">Dar de alta un Usuario</a>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">CODE1</th>
+                <th scope="col">Mail</th>
+                <th scope="col">Tipo de usuario</th>
+                <th scope="col">Detalle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%%>
+            <%foreach (var item in listaDeUsuarios)
+                {%>
+            <tr>
+                <th scope="row"><% = item.nombre%> </th>
+                <td><% = item.usuario_code1 %></td>
+                <td><% = item.email %></td>
+                <td>
+                    <%
+                        if (item.usuario_tipo == 0)
+                        {
+                    %>
+                            Usuario
+                            <%
+                                }
+                                else
+                                {
+                                    if (item.usuario_tipo == 1)
+                                    {
+                            %>
+                                Aprobador
+                                <%
+                                    }
+                                    else
+                                    {
+                                %>
+                                Administrador
+                                <%
+                                        }
+                                    }
+                                %>
+                </td>
+                <td>
+                    <a href="UsuarioDetalle.aspx?id=<% = item.id_usuario %> " class="btn btn-primary btn-user btn-block">Ver </a>
+                </td>
+            </tr>
+            <%}%>
+        </tbody>
+    </table>
 </asp:Content>

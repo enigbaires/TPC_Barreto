@@ -1,12 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EmpresaListado.aspx.cs" Inherits="Vista.EmpresaListado" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
-    <a href="EmpresaAlta.aspx" class="btn btn-primary btn-user btn-block">Dar de alta una Empresa
-    </a>
-
+    <a href="EmpresaAlta.aspx" class="btn btn-primary btn-user">Dar de alta una Empresa</a>
     <table class="table">
         <thead class="thead-dark">
             <tr>
@@ -19,9 +19,8 @@
             </tr>
         </thead>
         <tbody>
-
             <%%>
-            <%foreach (var item in listaDeClientes)
+            <%foreach (var item in listaDeEmpresas)
                 {%>
             <tr>
                 <th scope="row"><% = item.numero_sap_empresa%> </th>
@@ -37,5 +36,4 @@
             <%}%>
         </tbody>
     </table>
-
 </asp:Content>

@@ -11,70 +11,52 @@ namespace Vista
 {
 
 
-    public partial class UsuarioAlta
+    public partial class ArticuloDetalle
     {
 
         /// <summary>
-        /// confirmacionAlta control.
+        /// confirmacionEstado control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label confirmacionAlta;
+        protected global::System.Web.UI.WebControls.Label confirmacionEstado;
 
         /// <summary>
-        /// tbUsuarioNombre control.
+        /// tbCodigo_articulo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbUsuarioNombre;
+        protected global::System.Web.UI.WebControls.TextBox tbCodigo_articulo;
 
         /// <summary>
-        /// tbUsuarioCode1 control.
+        /// tbDescripcion_articulo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbUsuarioCode1;
+        protected global::System.Web.UI.WebControls.TextBox tbDescripcion_articulo;
 
         /// <summary>
-        /// tbEmail control.
+        /// btnModificacion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbEmail;
+        protected global::System.Web.UI.WebControls.Button btnModificacion;
 
         /// <summary>
-        /// tbPassword control.
+        /// btnBaja control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbPassword;
-
-        /// <summary>
-        /// selectTipoUsuario control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlSelect selectTipoUsuario;
-
-        /// <summary>
-        /// btnAlta control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAlta;
+        protected global::System.Web.UI.WebControls.Button btnBaja;
     }
 }

@@ -67,11 +67,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ArticuloAlta.aspx" />
+    <Content Include="ArticuloDetalle.aspx" />
+    <Content Include="ArticuloListado.aspx" />
     <Content Include="CAIAlta.aspx" />
+    <Content Include="CaiDetalle.aspx" />
     <Content Include="CAIListado.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="EmpresaAlta.aspx" />
-    <Content Include="EmpresaBaja.aspx" />
     <Content Include="EmpresaDetalle.aspx" />
     <Content Include="EmpresaListado.aspx" />
     <Content Include="ForgotPassword.aspx" />
@@ -84,17 +87,45 @@
     <Content Include="SolicitudListado.aspx" />
     <Content Include="Styles.css" />
     <Content Include="UsuarioAlta.aspx" />
-    <Content Include="UsuarioBaja.aspx" />
+    <Content Include="UsuarioDetalle.aspx" />
     <Content Include="UsuarioListado.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArticuloAlta.aspx.cs">
+      <DependentUpon>ArticuloAlta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArticuloAlta.aspx.designer.cs">
+      <DependentUpon>ArticuloAlta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloDetalle.aspx.cs">
+      <DependentUpon>ArticuloDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArticuloDetalle.aspx.designer.cs">
+      <DependentUpon>ArticuloDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ArticuloListado.aspx.cs">
+      <DependentUpon>ArticuloListado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ArticuloListado.aspx.designer.cs">
+      <DependentUpon>ArticuloListado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CAIAlta.aspx.cs">
       <DependentUpon>CAIAlta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="CAIAlta.aspx.designer.cs">
       <DependentUpon>CAIAlta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CaiDetalle.aspx.cs">
+      <DependentUpon>CaiDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CaiDetalle.aspx.designer.cs">
+      <DependentUpon>CaiDetalle.aspx</DependentUpon>
     </Compile>
     <Compile Include="CAIListado.aspx.cs">
       <DependentUpon>CAIListado.aspx</DependentUpon>
@@ -116,13 +147,6 @@
     </Compile>
     <Compile Include="EmpresaAlta.aspx.designer.cs">
       <DependentUpon>EmpresaAlta.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="EmpresaBaja.aspx.cs">
-      <DependentUpon>EmpresaBaja.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="EmpresaBaja.aspx.designer.cs">
-      <DependentUpon>EmpresaBaja.aspx</DependentUpon>
     </Compile>
     <Compile Include="EmpresaDetalle.aspx.cs">
       <DependentUpon>EmpresaDetalle.aspx</DependentUpon>
@@ -209,12 +233,12 @@
     <Compile Include="UsuarioAlta.aspx.designer.cs">
       <DependentUpon>UsuarioAlta.aspx</DependentUpon>
     </Compile>
-    <Compile Include="UsuarioBaja.aspx.cs">
-      <DependentUpon>UsuarioBaja.aspx</DependentUpon>
+    <Compile Include="UsuarioDetalle.aspx.cs">
+      <DependentUpon>UsuarioDetalle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="UsuarioBaja.aspx.designer.cs">
-      <DependentUpon>UsuarioBaja.aspx</DependentUpon>
+    <Compile Include="UsuarioDetalle.aspx.designer.cs">
+      <DependentUpon>UsuarioDetalle.aspx</DependentUpon>
     </Compile>
     <Compile Include="UsuarioListado.aspx.cs">
       <DependentUpon>UsuarioListado.aspx</DependentUpon>

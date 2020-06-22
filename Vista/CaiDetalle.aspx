@@ -1,7 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CAIAlta.aspx.cs" Inherits="Vista.CAIAlta" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CaiDetalle.aspx.cs" Inherits="Vista.CaiDetalle" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -21,7 +19,6 @@
     </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-
     <div class="col p-2">
         <asp:Label runat="server" ID="confirmacionEstado"></asp:Label>
         <table class="table table-hover">
@@ -60,9 +57,6 @@
                 </tr>
             </tbody>
         </table>
-        <asp:Button runat="server" CssClass="btn btn-primary" Text="Dar de Alta el CAI" ID="btnAlta" OnClick="btnAlta_Click" />
+        <asp:Button runat="server" CssClass="btn btn-primary" Text="Modificación" ID="btnModificacion" OnClick="btnModificacion_Click" />
     </div>
 </asp:Content>
-
-
-

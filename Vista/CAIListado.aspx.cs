@@ -11,9 +11,11 @@ namespace Vista
 {
     public partial class CAIListado : System.Web.UI.Page
     {
+        public List<CAIModelo> caiListado { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DAOCai dao = new DAOCai();
+            caiListado = dao.ListarCAI();
         }
     }
 }
