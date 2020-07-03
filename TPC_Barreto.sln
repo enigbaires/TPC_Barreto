@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "Vista\Vista.csproj", "{A64A6728-EB15-4B4F-9236-A0DA98EE8124}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "..\..\TPC_BarretoV01\TPC_Barreto\Modelo\Modelo.csproj", "{0A823B8E-229D-4606-9C01-3D6CC1935B4E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "Modelo\Modelo.csproj", "{0A823B8E-229D-4606-9C01-3D6CC1935B4E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlador", "..\..\TPC_BarretoV01\TPC_Barreto\Controlador\Controlador.csproj", "{D7393E15-B81C-45C1-BB8D-5CA0957AA15A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlador", "Controlador\Controlador.csproj", "{D7393E15-B81C-45C1-BB8D-5CA0957AA15A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
