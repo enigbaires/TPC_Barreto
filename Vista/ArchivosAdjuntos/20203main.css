@@ -1,0 +1,56 @@
+
+div {
+	box-sizing: border-box;
+	border: #999999 1px solid;
+	border-radius: 8px;
+	padding: 16px;
+	margin-bottom: 16px;
+	width: 100%;
+}
+
+p {
+	margin: 4px;
+}
+
+.user-form tr > td {
+	text-align: left;
+	vertical-align: middle;
+	padding: 2px;
+}
+.user-form tr > td:first-child {
+	text-align: right;	
+}
+
+input {
+	border: #888888 1px solid;
+	border-radius: 8px;
+	padding: 1px 8px 1px 8px;
+}
+
+button {
+	background: #dddddd;
+}
+
+input.ng-dirty.ng-valid {
+	background: #ddffdd;
+}
+
+input.ng-dirty.ng-invalid {
+	background: #ffdddd;
+}
+
+
+
+textarea {
+	border: #888888 1px solid;
+	border-radius: 8px;
+	padding: 1px 8px 1px 8px;
+}
+
+textarea.ng-dirty.ng-valid {
+	background: #ddffdd;
+}
+
+textarea.ng-dirty.ng-invalid {
+	background: #ffdddd;
+}
