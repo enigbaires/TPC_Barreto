@@ -12,14 +12,36 @@ namespace Vista
     public partial class UsuarioDetalle : System.Web.UI.Page
     {
         public UsuarioModelo usuario { get; set; }
+        public UsuarioModelo usuarioLogueado { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.QueryString["id"] == null) Response.Redirect("~/");
+            if ((Session[Session.SessionID + "usuarioLogueado"]) == null) Response.Redirect("Login.aspx");
             int idItemSelected = Convert.ToInt32(Request.QueryString["id"]);
             Session[Session.SessionID + "idItemSelected"] = idItemSelected;
             if (!IsPostBack)
             {
+                //pregunto si el usuario logueado no es administrador
+                usuarioLogueado = new UsuarioModelo();
+                usuarioLogueado = (UsuarioModelo)Session[Session.SessionID + "usuarioLogueado"];
+                if (usuarioLogueado.usuario_tipo != 2)
+                {
+                    //me fijo si es el mismo usuario, si no lo es, lo direcciono a default
+                    if (idItemSelected == usuarioLogueado.id_usuario)
+                    {
+                        tbUsuario_code1.Enabled = false;
+                        tbEmail.Enabled = false;
+                        selectTipoUsuario.Disabled = true;
+                        btnBaja.Visible = false;
+                    }
+                    else
+                    {
+                        Response.Redirect("~/");
+                    }
+                }
+
                 DAOUsuario dao = new DAOUsuario();
+                UsuarioModelo usuario = new UsuarioModelo();
                 usuario = dao.ListarUnUsuarioView(idItemSelected);
                 tbNombre.Text = usuario.nombre;
                 tbUsuario_code1.Text = usuario.usuario_code1;

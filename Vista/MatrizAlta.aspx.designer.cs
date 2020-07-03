@@ -11,52 +11,43 @@ namespace Vista
 {
 
 
-    public partial class Login
+    public partial class MatrizAlta
     {
 
         /// <summary>
-        /// form1 control.
+        /// confirmacionAlta control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label confirmacionAlta;
 
         /// <summary>
-        /// tbEmail control.
+        /// ddlSolicitante control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbEmail;
+        protected global::System.Web.UI.WebControls.DropDownList ddlSolicitante;
 
         /// <summary>
-        /// tbPassword control.
+        /// ddlAprobador control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbPassword;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAprobador;
 
         /// <summary>
-        /// btnIngresar control.
+        /// btnAlta control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnIngresar;
-
-        /// <summary>
-        /// confirmacionEstado control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label confirmacionEstado;
+        protected global::System.Web.UI.WebControls.Button btnAlta;
     }
 }

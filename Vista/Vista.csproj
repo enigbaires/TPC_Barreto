@@ -78,13 +78,16 @@
     <Content Include="EmpresaDetalle.aspx" />
     <Content Include="EmpresaListado.aspx" />
     <Content Include="ForgotPassword.aspx" />
+    <Content Include="ImpresionRemito.aspx" />
     <Content Include="Login.aspx" />
-    <Content Include="RemitoConfiguracion.aspx" />
+    <Content Include="LogOut.aspx" />
+    <Content Include="MatrizAlta.aspx" />
+    <Content Include="MatrizDetalle.aspx" />
+    <Content Include="MatrizListado.aspx" />
     <Content Include="RemitoDetalle.aspx" />
     <Content Include="RemitoListado.aspx" />
-    <Content Include="SolicitudCrear.aspx" />
+    <Content Include="SolicitudAlta.aspx" />
     <Content Include="SolicitudDetalle.aspx" />
-    <Content Include="SolicitudListado.aspx" />
     <Content Include="Styles.css" />
     <Content Include="UsuarioAlta.aspx" />
     <Content Include="UsuarioDetalle.aspx" />
@@ -169,6 +172,13 @@
     <Compile Include="ForgotPassword.aspx.designer.cs">
       <DependentUpon>ForgotPassword.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ImpresionRemito.aspx.cs">
+      <DependentUpon>ImpresionRemito.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImpresionRemito.aspx.designer.cs">
+      <DependentUpon>ImpresionRemito.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -176,14 +186,35 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RemitoConfiguracion.aspx.cs">
-      <DependentUpon>RemitoConfiguracion.aspx</DependentUpon>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RemitoConfiguracion.aspx.designer.cs">
-      <DependentUpon>RemitoConfiguracion.aspx</DependentUpon>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MatrizAlta.aspx.cs">
+      <DependentUpon>MatrizAlta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MatrizAlta.aspx.designer.cs">
+      <DependentUpon>MatrizAlta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MatrizDetalle.aspx.cs">
+      <DependentUpon>MatrizDetalle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MatrizDetalle.aspx.designer.cs">
+      <DependentUpon>MatrizDetalle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MatrizListado.aspx.cs">
+      <DependentUpon>MatrizListado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MatrizListado.aspx.designer.cs">
+      <DependentUpon>MatrizListado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemitoDetalle.aspx.cs">
       <DependentUpon>RemitoDetalle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -205,12 +236,12 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="SolicitudCrear.aspx.cs">
-      <DependentUpon>SolicitudCrear.aspx</DependentUpon>
+    <Compile Include="SolicitudAlta.aspx.cs">
+      <DependentUpon>SolicitudAlta.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SolicitudCrear.aspx.designer.cs">
-      <DependentUpon>SolicitudCrear.aspx</DependentUpon>
+    <Compile Include="SolicitudAlta.aspx.designer.cs">
+      <DependentUpon>SolicitudAlta.aspx</DependentUpon>
     </Compile>
     <Compile Include="SolicitudDetalle.aspx.cs">
       <DependentUpon>SolicitudDetalle.aspx</DependentUpon>
@@ -218,13 +249,6 @@
     </Compile>
     <Compile Include="SolicitudDetalle.aspx.designer.cs">
       <DependentUpon>SolicitudDetalle.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="SolicitudListado.aspx.cs">
-      <DependentUpon>SolicitudListado.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="SolicitudListado.aspx.designer.cs">
-      <DependentUpon>SolicitudListado.aspx</DependentUpon>
     </Compile>
     <Compile Include="UsuarioAlta.aspx.cs">
       <DependentUpon>UsuarioAlta.aspx</DependentUpon>

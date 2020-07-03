@@ -4,13 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Modelo;
 using Controlador;
-using System.Web.Configuration;
+using Modelo;
 
 namespace Vista
 {
-    public partial class RemitoDetalle : System.Web.UI.Page
+    public partial class ImpresionRemito : System.Web.UI.Page
     {
         public List<SolicitudCabeceraModelo> listaCabecera { get; set; }
         public SolicitudCabeceraModelo cabecera { get; set; }
@@ -27,11 +26,13 @@ namespace Vista
         public UsuarioModelo usuarioLogueado { get; set; }
         public DAORemito daoRemito { get; set; }
         protected void Page_Load(object sender, EventArgs e)
-        {
-            if (Request.QueryString["id"] == null) Response.Redirect("~/");
+        {   
             if ((Session[Session.SessionID + "usuarioLogueado"]) == null) Response.Redirect("Login.aspx");
-            idItemSelected = Convert.ToInt32(Request.QueryString["id"]);
-            Session[Session.SessionID + "idItemSelected"] = idItemSelected;
+            if ((Session[Session.SessionID + "idItemSelected"]) == null) Response.Redirect("RemitoListado.aspx");
+            idItemSelected = (int)Session[Session.SessionID + "idItemSelected"];
+            //si el CAI no está vigente, no dejo ver la página
+            DAOCai daoCai = new DAOCai();
+            if (!daoCai.ValidarImpresionCai()) Response.Redirect("RemitoListado.aspx");
 
             if (!IsPostBack)
             {
@@ -46,13 +47,6 @@ namespace Vista
                 listaDetalleDeUno = new List<SolicitudDetalleModelo>();
                 listaDetalleDeUno = daoDetalle.ListarUnaSolicitudDetalle(idItemSelected);
 
-                //si el CAI está vigente, habilito el botón
-                DAOCai daoCai = new DAOCai();
-                if (daoCai.ValidarImpresionCai())
-                {
-                    btnImprimir.Enabled = true;
-                }
-
                 //buscar cliente y transportista y conectarlo al label
                 listaEmpresaTodas = new List<EmpresaModelo>();
                 listaEmpresaTodas = (List<EmpresaModelo>)Session[Session.SessionID + "listaEmpresaTodas"];
@@ -63,30 +57,24 @@ namespace Vista
                 lbCliente.Text = cliente.razon_social;
                 lbTransportista.Text = transportista.razon_social;
 
-                //buscar tipo de remito y conectarlo al label
-                listaTipoRemito = new List<RemitoTipoModelo>();
-                listaTipoRemito = (List<RemitoTipoModelo>)Session[Session.SessionID + "listaTipoRemito"];
-                tipoRemito = new RemitoTipoModelo();
-                tipoRemito = listaTipoRemito.Find(J => J.id_tipo_remito == cabecera.id_tipo_remito);
-                lbTipoRemito.Text = tipoRemito.descripcion_remito;
-                
                 //buscar articulo y conectarlo al label
                 listaArticuloTodos = new List<ArticuloModelo>();
                 listaArticuloTodos = (List<ArticuloModelo>)Session[Session.SessionID + "listaArticuloTodos"];
                 articulo = new ArticuloModelo();
                 articulo = listaArticuloTodos.Find(J => J.id_articulo == listaDetalleDeUno[0].id_articulo);
                 lbArticulo.Text = articulo.descripcion_articulo;
-                
-                //conectar textbox
+                lbCodigoArticulo.Text = articulo.codigo_articulo;
+
+                //conectar labels
                 lbCantidad.Text = Convert.ToString(listaDetalleDeUno[0].cantidad);
+                lbTotal.Text = Convert.ToString(listaDetalleDeUno[0].cantidad);
                 lbNroRemito.Text = Convert.ToString(daoRemito.BuscarNroRemito(cabecera.id_solicitud));
 
+                //busco CAI vigente
+                DAOCai daoCaiVigente = new DAOCai();
+                long caiVigente = daoCaiVigente.BuscarCaiVigente();
+                lbCAI.Text = Convert.ToString(caiVigente);
             }
-        }
-
-        protected void btnImprimir_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("ImpresionRemito.aspx");
         }
     }
 }

@@ -6,7 +6,14 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
+    <%if (usuarioLogueado.usuario_tipo == 2)
+        {
+    %>
     <a href="EmpresaAlta.aspx" class="btn btn-primary btn-user">Dar de alta una Empresa</a>
+    <%
+
+        } %>
+
     <table class="table">
         <thead class="thead-dark">
             <tr>

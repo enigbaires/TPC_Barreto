@@ -14,6 +14,7 @@ namespace Vista
         public List<ArticuloModelo> listaDeArticulos { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            if ((Session[Session.SessionID + "usuarioLogueado"]) == null) Response.Redirect("Login.aspx");
             String condicion;
             DAOArticulo dao = new DAOArticulo();
             if (Request.QueryString["condicion"] == null)

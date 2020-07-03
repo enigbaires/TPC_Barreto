@@ -11,97 +11,97 @@ namespace Vista
 {
 
 
-    public partial class SolicitudDetalle
+    public partial class ImpresionRemito
     {
 
         /// <summary>
-        /// confirmacionEstado control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label confirmacionEstado;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// ddlEstadoActual control.
+        /// lbNroRemito control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlEstadoActual;
+        protected global::System.Web.UI.WebControls.Label lbNroRemito;
 
         /// <summary>
-        /// btnCambiarEstado control.
+        /// lbCliente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCambiarEstado;
+        protected global::System.Web.UI.WebControls.Label lbCliente;
 
         /// <summary>
-        /// ddlCliente control.
+        /// lbDireccion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlCliente;
+        protected global::System.Web.UI.WebControls.Label lbDireccion;
 
         /// <summary>
-        /// ddlTipoRemito control.
+        /// lbCodigoArticulo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTipoRemito;
+        protected global::System.Web.UI.WebControls.Label lbCodigoArticulo;
 
         /// <summary>
-        /// ddlArticulo control.
+        /// lbArticulo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlArticulo;
+        protected global::System.Web.UI.WebControls.Label lbArticulo;
 
         /// <summary>
-        /// tbCantidad control.
+        /// lbCantidad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbCantidad;
+        protected global::System.Web.UI.WebControls.Label lbCantidad;
 
         /// <summary>
-        /// ddlTransportista control.
+        /// lbTotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlTransportista;
+        protected global::System.Web.UI.WebControls.Label lbTotal;
 
         /// <summary>
-        /// tbObservaciones control.
+        /// lbTransportista control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbObservaciones;
+        protected global::System.Web.UI.WebControls.Label lbTransportista;
 
         /// <summary>
-        /// hlVerArchivo control.
+        /// lbCAI control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hlVerArchivo;
+        protected global::System.Web.UI.WebControls.Label lbCAI;
     }
 }

@@ -12,8 +12,13 @@ namespace Vista
     public partial class EmpresaListado : System.Web.UI.Page
     {
         public List<EmpresaModelo> listaDeEmpresas { get; set; }
+        public UsuarioModelo usuarioLogueado { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            if ((Session[Session.SessionID + "usuarioLogueado"]) == null) Response.Redirect("Login.aspx");
+            usuarioLogueado = new UsuarioModelo();
+            usuarioLogueado = (UsuarioModelo)Session[Session.SessionID + "usuarioLogueado"];
+
             String condicion;
             String tipo;
             DAOEmpresa dAOEmpresa = new DAOEmpresa();

@@ -12,11 +12,17 @@ namespace Vista
     public partial class EmpresaDetalle : System.Web.UI.Page
     {
         public EmpresaModelo empresa { get; set; }
+        public UsuarioModelo usuarioLogueado { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            if ((Session[Session.SessionID + "usuarioLogueado"]) == null) Response.Redirect("Login.aspx");
             if (Request.QueryString["id"] == null) Response.Redirect("~/");
             int idItemSelected = Convert.ToInt32(Request.QueryString["id"]);
             Session[Session.SessionID + "idItemSelected"] = idItemSelected;
+
+            usuarioLogueado = new UsuarioModelo();
+            usuarioLogueado = (UsuarioModelo)Session[Session.SessionID + "usuarioLogueado"];
+
             if (!IsPostBack)
             {
                 DAOEmpresa dao = new DAOEmpresa();
@@ -29,6 +35,11 @@ namespace Vista
                 tbTelefono.Text = empresa.telefono;
                 tbEmail.Text = empresa.email;
                 selectTipoEmpresa.Value = Convert.ToString(empresa.tipo_empresa);
+            }
+            if (usuarioLogueado.usuario_tipo != 2)
+            {
+                btnBaja.Visible = false;
+                btnModificacion.Visible = false;
             }
         }
 

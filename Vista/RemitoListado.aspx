@@ -4,14 +4,39 @@
     <!-- Bootstrap core JavaScript -->
     <script src="js/jquery.min.js"></script>
 
-    <link href="css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="text-center">
-            <div class="error mx-auto" data-text="404">404</div>
-            <p class="lead text-gray-800 mb-5">Page Not Found</p>
-            <p class="text-gray-500 mb-0">It looks like you found a glitch in the matrix...</p>
-            <a href="Default.aspx">← Back to Dashboard</a>
-          </div>
+    
+    <asp:Label CssClass="alert alert-danger" ID="lbAlertaCai" runat="server" Text="Los remitos no pueden ser impresos por no haber CAI vigente"></asp:Label>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Nro Remito</th>
+                <th scope="col">Nro Solicitud</th>
+                <th scope="col">Cliente</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Detalle</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <%foreach (var item in cabecera)
+                {
+                    if (daoRemito.BuscarNroRemito(item.id_solicitud) != 0) { 
+                    %>
+            <tr>
+                <th scope="row"><% = daoRemito.BuscarNroRemito(item.id_solicitud) %> </th>
+                <td><% = item.id_solicitud %></td>
+                <td><% = daoEmpresa.NombreEmpresa(item.id_cliente) %></td>
+                <td><% = item.fecha_solicitud.ToShortDateString() %></td>
+                <td>
+                    <a href="RemitoDetalle.aspx?id=<% = item.id_solicitud %> " class="btn btn-primary btn-user btn-block">Ver </a>
+                </td>
+            </tr>
+            <%}
+                
+                }%>
+        </tbody>
+    </table>
 </asp:Content>

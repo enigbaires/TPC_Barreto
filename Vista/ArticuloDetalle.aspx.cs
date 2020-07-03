@@ -14,6 +14,7 @@ namespace Vista
         public ArticuloModelo articulo { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            if ((Session[Session.SessionID + "usuarioLogueado"]) == null) Response.Redirect("Login.aspx");
             if (Request.QueryString["id"] == null) Response.Redirect("~/");
             int idItemSelected = Convert.ToInt32(Request.QueryString["id"]);
             Session[Session.SessionID + "idItemSelected"] = idItemSelected;

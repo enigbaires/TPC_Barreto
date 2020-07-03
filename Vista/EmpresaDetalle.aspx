@@ -76,6 +76,6 @@
             </tbody>
         </table>
         <asp:Button runat="server" CssClass="btn btn-primary" Text="Modificación" ID="btnModificacion" OnClick="btnModificacion_Click" />
-        <asp:Button runat="server" CssClass="btn btn-primary" Text="    Baja    " ID="btnBaja" OnClick="btnBaja_Click" />
+        <asp:Button runat="server" CssClass="btn btn-primary" Text=" Baja " ID="btnBaja" OnClick="btnBaja_Click" />
     </div>
 </asp:Content>

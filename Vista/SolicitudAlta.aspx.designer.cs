@@ -11,7 +11,7 @@ namespace Vista
 {
 
 
-    public partial class SolicitudDetalle
+    public partial class SolicitudAlta
     {
 
         /// <summary>
@@ -22,24 +22,6 @@ namespace Vista
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label confirmacionEstado;
-
-        /// <summary>
-        /// ddlEstadoActual control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlEstadoActual;
-
-        /// <summary>
-        /// btnCambiarEstado control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCambiarEstado;
 
         /// <summary>
         /// ddlCliente control.
@@ -96,12 +78,21 @@ namespace Vista
         protected global::System.Web.UI.WebControls.TextBox tbObservaciones;
 
         /// <summary>
-        /// hlVerArchivo control.
+        /// fileArchivo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hlVerArchivo;
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile fileArchivo;
+
+        /// <summary>
+        /// btnAlta control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAlta;
     }
 }

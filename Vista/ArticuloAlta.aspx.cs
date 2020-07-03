@@ -13,7 +13,7 @@ namespace Vista
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if ((Session[Session.SessionID + "usuarioLogueado"]) == null) Response.Redirect("Login.aspx");
         }
 
         protected void btnAlta_Click(object sender, EventArgs e)
