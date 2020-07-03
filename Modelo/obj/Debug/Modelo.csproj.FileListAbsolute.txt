@@ -1,0 +1,12 @@
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\TPC_Barreto\TPC_Barreto\Modelo\bin\Debug\Modelo.dll
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\TPC_Barreto\TPC_Barreto\Modelo\bin\Debug\Modelo.pdb
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\TPC_Barreto\TPC_Barreto\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\TPC_Barreto\TPC_Barreto\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\TPC_Barreto\TPC_Barreto\Modelo\obj\Debug\Modelo.dll
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\TPC_Barreto\TPC_Barreto\Modelo\obj\Debug\Modelo.pdb
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\TPC_BarretoV01\TPC_Barreto\Modelo\bin\Debug\Modelo.dll
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\TPC_BarretoV01\TPC_Barreto\Modelo\bin\Debug\Modelo.pdb
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\TPC_BarretoV01\TPC_Barreto\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\TPC_BarretoV01\TPC_Barreto\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\TPC_BarretoV01\TPC_Barreto\Modelo\obj\Debug\Modelo.dll
+C:\Users\310270153\OneDrive - Philips\emanuel\MisDocumentos\PIII\TPC_BarretoV01\TPC_Barreto\Modelo\obj\Debug\Modelo.pdb
